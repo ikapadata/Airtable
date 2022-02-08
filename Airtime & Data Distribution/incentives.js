@@ -20,8 +20,8 @@ let airtimeTable = "Results"; // Enter the table name you want to save incentive
  let simApiKey = '';
 
 // reloadly api keys----------------------------------------------
-let reloadlyId = '';
-let reloadlySecret = '';
+let reloadlyId = ''; // reloadly id
+let reloadlySecret = ''; // reloadly secret key
 //---------------------------------------------------------------
 
 let inputConfig = input.config();
