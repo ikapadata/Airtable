@@ -12,10 +12,11 @@ This script is designed to enable you to recharge mobile devices with airtime an
 
 **To use this script as-is**
 
-1. Download the [sample csv]() from this repo and import it as a new table on your Airtable base. This will provide the fields that you'll neeed to capture results
-2. Create a new Automation and select a trigger.
-3. Add Runs script as your action.
-4. Copy and paste the code from [incentive.js](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/incentives.js) onto Airtable's script editor.
+1. Download the [sample csv]() from this repo and import it as a new table on your Airtable base. This will provide all of the required fields for capturing results
+2. Rename the new table to **Results**.
+3. Create a new Automation and select the appropriate trigger.
+4. Add Runs script as your action.
+5. Copy and paste the code from [incentive.js](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/incentives.js) onto Airtable's script editor.
 
 ### Parameters
 
