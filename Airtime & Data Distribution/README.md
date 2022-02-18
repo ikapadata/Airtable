@@ -6,3 +6,6 @@ Airtime and data recharges are distributed to contacts for any of the following 
 - When record created
 - When record updated
 - When record enters view
+
+## Reloadly
+## Simcontrol
