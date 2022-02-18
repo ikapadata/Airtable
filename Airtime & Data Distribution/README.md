@@ -6,14 +6,18 @@ This script is designed to enable you to recharge mobile devices with airtime an
 - When record updated
 - When record enters view
 
-## Reloadly
-Airtime and Data Top-Up API Access The World’s First Developer Platform for Connecting To Global Telcos
-Enable your mobile and web apps to send mobile top-ups worldwide within minutes
+## How to use
 
-Send airtime online with a simple integration
-For ambitious companies around the world, Reloadly's data and airtime API makes topping up prepaid mobile users as simple, borderless, and programmable as the rest of the internet.
+### Getting started
 
-Send airtime online with a simple APIs, SDKS, Widgets or Plugins. With just a few lines of code, you can add mobile top-up to your web or mobile application in the programming language you already use.
+**To use this plug-in as-is**
 
+1. Download the [sample form](https://github.com/surveycto/format-symbol/raw/master/extras/sample-form/Sample%20form%20-%20Format%20symbol%20field%20plug-in.xlsx) from this repo and upload it to your SurveyCTO server.
+1. Download the [format-symbol.fieldplugin.zip](https://github.com/surveycto/format-symbol/raw/master/format-symbol.fieldplugin.zip) file from this repo, and attach it to the sample form on your SurveyCTO server.
 
-## Simcontrol
+### Parameters
+
+| Parameter key | Parameter value |
+| --- | --- |
+| `symbol` | The symbol to be displayed.|
+| `placement` | The positioning of they symbol. This can take two values: <br> <ol><li>`left` (default) - the symbol is on the left of the input box. </li><li>`right` - the symbol is on the right of the input box.</li></ol>|
