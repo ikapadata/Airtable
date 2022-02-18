@@ -1,6 +1,5 @@
-# Airtime and Data Distributions
-
-Airtime and data recharges are distributed to contacts for any of the following automation triggers:
+# Description
+This script is designed to enable you to recharge mobile devices with airtime and data. With it's Relodaly and Simcontrol API integrations you have borderless recharges of 5 billion devices covered by 630 mobile operator networks in over 150 countries. On Airtable, thhe recharges are automated to be issued to contacts for any of the following automation triggers:
 - When record matches conditions
 - When a form is submitted
 - When record created
