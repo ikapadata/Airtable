@@ -1,2 +1,2 @@
-# Airtable
+# Airtable Scripts
 Airtable automation scripts
