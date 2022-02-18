@@ -10,10 +10,12 @@ This script is designed to enable you to recharge mobile devices with airtime an
 
 ### Getting started
 
-**To use this plug-in as-is**
+**To use this script as-is**
 
-1. Download the [sample form](https://github.com/surveycto/format-symbol/raw/master/extras/sample-form/Sample%20form%20-%20Format%20symbol%20field%20plug-in.xlsx) from this repo and upload it to your SurveyCTO server.
-1. Download the [format-symbol.fieldplugin.zip](https://github.com/surveycto/format-symbol/raw/master/format-symbol.fieldplugin.zip) file from this repo, and attach it to the sample form on your SurveyCTO server.
+1. Download the [sample csv]() from this repo and import it as a new table on your Airtable base. This will provide the fields that you'll neeed to capture results
+2. Create a new Automation and select a trigger.
+3. Add Runs script as your action.
+4. Copy and paste the code from [incentive.js](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/incentives.js) onto Airtable's script editor.
 
 ### Parameters
 
