@@ -11,7 +11,7 @@ This script is designed to enable you to recharge mobile devices with airtime an
 ## How to use
 
 ### Getting started
-_It assumed that you're familiar with creating Airtable automations. You can refresh your knowledge by reading [How to create an Airtable Automation](https://support.airtable.com/hc/en-us/articles/360052619093-Creating-an-automation)_
+_It is assumed that you're familiar with creating Airtable automations. You can refresh your knowledge by reading [How to create an Airtable Automation](https://support.airtable.com/hc/en-us/articles/360052619093-Creating-an-automation)_
 
 **To use this script as-is**
 
