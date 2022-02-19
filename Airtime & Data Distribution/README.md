@@ -11,7 +11,7 @@ This script is designed to enable you to recharge mobile devices with airtime an
 ## How to use
 
 ### Getting started
-
+_It assumed that you're familiar with creating Airtable automations. You can refresh your knowledge by reading [How to create an Airtable Automation](https://support.airtable.com/hc/en-us/articles/360052619093-Creating-an-automation)
 **To use this script as-is**
 
 1. Download the [sample csv](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Airtime%20Results%20Fields.csv) from this repo and import it as a new table on your Airtable base. This will provide all of the required fields for capturing results
