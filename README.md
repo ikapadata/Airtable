@@ -4,4 +4,4 @@ Airtable scripting allows you to write short scripts to automate repetitive task
 - [Airtime & Data Recharges](https://github.com/ikapadata/Airtable/tree/new-edits/Airtime%20%26%20Data%20Distribution)
 - [SMS Distribution](https://github.com/ikapadata/Airtable/tree/new-edits/SMS%20Notificamtions)
 
-To use the scripts above, you'll need a basic understanding of JavaScript. 
+To use the scripts above you only have to copy and paste the javascript files into the Airtable Scripting block and add the relevant Tables and parameters. To edit the scripts, you'll need a basic understanding of JavaScript.
