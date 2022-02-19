@@ -41,5 +41,4 @@ _It assumed that you're familiar with creating Airtable automations. You can ref
 | `networkId` | mobile network ID|
 
 ## Demonstration
-Follow this Video.
 ![Screenshot](http://sco-assets.support.airtable.com/automations/change_trigger_type.gif)
