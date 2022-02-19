@@ -13,6 +13,9 @@ This script is designed to enable you to recharge mobile devices with airtime an
 1. Perform airtime reacharges to approximately 5 billion devices worldwide.
 1. Perform data bundle recharges to approximately 5 billion devices worldwide.
 
+_At ikapadata, this script is used to recharge survey respondents at the end of surveys. It is a low code alternative to the [surveyCTO Airtime & Data Plug-in](https://github.com/ikapadata/surveyCTO-Plugins/tree/new-edits/Airtime%20distribution) recharge solution. It is suitable for researchers with Pro Airtable account and knowledge of setting up backends._
+
+
 ## How to use
 
 ### Getting started
