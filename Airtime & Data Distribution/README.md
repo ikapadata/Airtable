@@ -23,7 +23,7 @@ _It is assumed that you're familiar with creating Airtable automations. You can 
 
 ### Parameters
 #### Reloadly Recharges
-
+[Create a Reloadly account](https://www.reloadly.com/registration) and find your `reloadlyId` and `reloadlySecret` at [API settings.](https://www.reloadly.com/developers/api-settings)
 | Parameter key | Parameter value |
 | --- | --- |
 | `phone` | international mobile phone number|
