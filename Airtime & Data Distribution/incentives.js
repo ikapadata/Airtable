@@ -1,49 +1,24 @@
-/*----------------------------------------------------------------------------------------------------------
-Click Edit code and do the following:
-1. Click Add input variable 
-2. Name = network & value = select the field containing the network
-3. Click Add input variable 
-4. Name = amount & value = select the field containing the amount
-5. Click Add input variable 
-6. Name = phone & value = select the field containing the phone
-7. Click Add input variable 
-8. Name = reference & value = select the field containing the reference
-9. Click Add input variable 
-10. Name = isoName & value = select the field containing the isoName
-----------------------------------------------------------------------------------------------------------*/
-let airtimeTable = "Results"; // Enter the table name you want to save incentive records into
-
-/*
-      DO NOT CHANGE THE CODE BELOW.
-*/
-// simcontrol api----------------------------------------------
- let simApiKey = inputConfig["simApiKey"];
-
-// reloadly api keys----------------------------------------------
-let reloadlyId = inputConfig["reloadlyId"]; // reloadly id
-let reloadlySecret = inputConfig["reloadlySecret"]; // reloadly secret key
-//---------------------------------------------------------------
 
 let inputConfig = input.config();
-console.log(inputConfig);
+// results table----------------------------------------------
+let airtimeTable = inputConfig["ResultsTable"]; // name of table
 
+// simcontrol api----------------------------------------------
+let simApiKey = inputConfig["simApiKey"];
+let simcontrol_network_id = inputConfig["simcontrol_network_id"];
+let bundle_id = inputConfig["bundle_id"];
+
+// reloadly api ----------------------------------------------
+let reloadlyId = inputConfig["reloadlyId"]; // reloadly id
+let reloadlySecret = inputConfig["reloadlySecret"]; // reloadly secret key
+let isoName = inputConfig["isoName"];
+//---------------------------------------------------------------
 let phone = inputConfig["phone"];
 let amount =inputConfig["amount"];
 let networkCell = inputConfig["network"];
-let reference = inputConfig["reference"];
-let isoName = 'ZA';//inputConfig["isoName"];
-let recId = inputConfig["recId"];
-let dataId = inputConfig["dataId"];
 let category = inputConfig["category"];
-let simcontrol_network_id = inputConfig["simcontrol_network_id"];
-let bundle_id = inputConfig["bundle_id"];
-let incentive_reference = inputConfig["incentive_reference"];
 
-
-
-/*if(incentive_reference != null){
-  reference == incentive_reference
-}*/
+let reference = inputConfig["reference"];
 
 if(reference==null){
   reference = String(Date.now())
@@ -100,10 +75,8 @@ if (category=="Airtime"){
     let requests = new httpRequest()
     let token =  await requests.post(apiUrl, headers, payload)
     let jsonToken = JSON.parse(JSON.stringify(await token.json()))
-    console.log('Token')
 
     let accessToken = jsonToken.access_token
-    console.log(accessToken)
     let tokenType = jsonToken.token_type
 
     // Get Operator Id
@@ -114,12 +87,9 @@ if (category=="Airtime"){
 
     let jsonNetwork = JSON.parse(JSON.stringify(await network.json()))
 
-    console.log(jsonNetwork)
-
     let reloadlyNetwork = await reloadlyNetworkInfo(jsonNetwork,networkCell)
     let mnoId = reloadlyNetwork.operatorId // operator Id
-
-    console.log('Send Airtime')
+    
     // Send Airtime
     let airtimeUrl =  "https://topups.reloadly.com/topups"
     let airtimeValues = {"recipientPhone": {"countryCode": isoName,"number": phone },
@@ -132,13 +102,11 @@ if (category=="Airtime"){
                       'Accept': 'application/com.reloadly.topups-v1+json',
                       'Authorization': tokenType+" "+accessToken}
 
-    console.log(airtimeValues)
-
     // Recharge with airtime
     let airtime =  await requests.post(airtimeUrl, sendHeaders,airtimeValues)
     console.log(airtime)
     let jsonAirtime = JSON.parse(JSON.stringify(await airtime.json()))
-    console.log(jsonAirtime)
+
 
     // export data
   let keys = Object.keys(jsonAirtime)
@@ -161,10 +129,6 @@ if (category=="Airtime"){
 }
 else{
 
-  
-  //-
-  console.log("Phone: " +phone +", Network: "+networkCell+", Amount: R"+bundle_id+ ", Reference: "+reference+', isoName: '+isoName)
-
   let headers = {'Content-Type': 'application/json', 'simcontrol-api-key': simApiKey};
   let apiUrl ='https://new.simcontrol.co.za/graphql/';
   let  qryStr = "".concat('mutation { rechargeSim(msisdn: \"+',String(phone),'\", networkId: \"',simcontrol_network_id,'\", productId:\"',bundle_id,'\", reference: \"',reference, '\") { reference  message}}')
@@ -173,18 +137,13 @@ else{
   let result  =  await requests.post(apiUrl, headers, airtimeQry)
   let jsonData = await result.json()
 
-  console.log(jsonData)
-
 
   let rechargeStr = "".concat('{ adhocRecharges(first: 1, reference: \"',reference,'\") { edges { node {id msisdn network { name } productType product { label } price status succeededAt created failureType reference} } } }')
   let rechargeQry = {'query':rechargeStr};
 
-  console.log(rechargeQry)
-
   let recharge  =  await requests.post(apiUrl, headers, rechargeQry)
   let jsonRecharge = await recharge.json()
 
-  console.log('Status')
   let data = jsonRecharge['data']['adhocRecharges']['edges'][0]['node']
 
   let jsonExport = {}
@@ -202,10 +161,3 @@ else{
 
 
 }
-
-
-
-
-
-
-//console.log(jsonAirtime)
