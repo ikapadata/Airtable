@@ -17,11 +17,11 @@ let airtimeTable = "Results"; // Enter the table name you want to save incentive
       DO NOT CHANGE THE CODE BELOW.
 */
 // simcontrol api----------------------------------------------
- let simApiKey = '';
+ let simApiKey = inputConfig["simApiKey"];
 
 // reloadly api keys----------------------------------------------
-let reloadlyId = ''; // reloadly id
-let reloadlySecret = ''; // reloadly secret key
+let reloadlyId = inputConfig["reloadlyId"]; // reloadly id
+let reloadlySecret = inputConfig["reloadlySecret"]; // reloadly secret key
 //---------------------------------------------------------------
 
 let inputConfig = input.config();
