@@ -1,19 +1,8 @@
-/*----------------------------------------------------------------------------------------------------------
-Click Edit code and do the following:
-1. Click Add input variable 
-2. Name = phone & value = select the field containing the phone
-3. Click Add input variable 
-4. Name = text & value = select the field containing the text
-----------------------------------------------------------------------------------------------------------*/
-/*
-      DO NOT CHANGE THE CODE BELOW.
-*/
 let inputConfig = input.config();
 let phoneNumber = inputConfig["phone"];
-let text =inputConfig["text"];
-
-
-
+let text = inputConfig["text"];
+let token = inputConfig["token"];
+let application_id = inputConfig["appId"];
 
 // httpRequest
 class httpRequest{
@@ -36,9 +25,6 @@ class httpRequest{
     }
 }
 let url = "https://portal.bulkgate.com/api/1.0/simple/transactional";
-let token = "";
-let application_id = "";
-
 let header ={"Host": "portal.bulkgate.com",
 "Content-Type": "application/json",
 "Cache-Control": "no-cache"}
@@ -52,10 +38,7 @@ let data = {
 
 let requests = new httpRequest();
 let r = await requests.post(url,header,data)
-
 let jsonRes = JSON.parse(JSON.stringify(await r.json()))
-
-console.log(jsonRes)
 
 
 
