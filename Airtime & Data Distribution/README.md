@@ -24,5 +24,15 @@ This script is designed to enable you to recharge mobile devices with airtime an
 
 | Parameter key | Parameter value |
 | --- | --- |
-| `symbol` | The symbol to be displayed.|
-| `placement` | The positioning of they symbol. This can take two values: <br> <ol><li>`left` (default) - the symbol is on the left of the input box. </li><li>`right` - the symbol is on the right of the input box.</li></ol>|
+| `phone` | international mobile phone number|
+| `network` | moblie network operator name|
+| `amount` | value of recharge|
+| `category` | specify Airtime or Data recharge|
+| `reloadlyId` | reloadly API ID|
+| `reloadlySecret` | Reloadly Secret API Key|
+
+| Parameter key | Parameter value |
+| --- | --- |
+| `simcontrolKey` | simcontrol API key|
+| `simcontrolBudnleId` | simcontrol data bundle Id|
+| `simcontrolNetworkId` | mobile network ID|
