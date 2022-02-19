@@ -42,4 +42,4 @@ _It assumed that you're familiar with creating Airtable automations. You can ref
 
 ## Demonstration
 Follow this Video.
-![Screenshot](https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4)
+![Screenshot](http://sco-assets.support.airtable.com/automations/change_trigger_type.gif)
