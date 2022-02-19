@@ -21,6 +21,7 @@ This script is designed to enable you to recharge mobile devices with airtime an
 5. Copy and paste the code from [incentive.js](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/incentives.js) onto Airtable's script editor.
 
 ### Parameters
+#### Reloadly Recharges
 
 | Parameter key | Parameter value |
 | --- | --- |
@@ -31,6 +32,7 @@ This script is designed to enable you to recharge mobile devices with airtime an
 | `reloadlyId` | reloadly API ID|
 | `reloadlySecret` | Reloadly Secret API Key|
 
+#### Simcontrol Recharges
 | Parameter key | Parameter value |
 | --- | --- |
 | `simcontrolKey` | simcontrol API key|
