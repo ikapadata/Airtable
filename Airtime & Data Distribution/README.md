@@ -8,6 +8,11 @@ This script is designed to enable you to recharge mobile devices with airtime an
 - When record updated
 - When record enters view
 
+### Features
+
+1. Perform airtime reacharges to approximately 5 billion devices worldwide.
+1. Perform data bundle recharges to approximately 5 billion devices worldwide.
+
 ## How to use
 
 ### Getting started
