@@ -36,5 +36,5 @@ This script is designed to enable you to recharge mobile devices with airtime an
 | Parameter key | Parameter value |
 | --- | --- |
 | `simcontrolKey` | simcontrol API key|
-| `simcontrolBudnleId` | simcontrol data bundle Id|
-| `simcontrolNetworkId` | mobile network ID|
+| `bundleId` | simcontrol data bundle Id|
+| `networkId` | mobile network ID|
