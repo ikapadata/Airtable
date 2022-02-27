@@ -27,11 +27,11 @@ _It is assumed that you're familiar with creating Airtable automations. You can 
 
 ![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Screenshots/requests_table.gif)
 
-3. Create the **Results** table by downloading this [Results.csv](https://www.dropbox.com/s/e2qp8w8j00ejlvh/Results.csv?dl=1) from this repo and importing it as a new table on your Airtable base. This will provide all of the required fields for recharge results.
+2. Create the **Results** table by downloading this [Results.csv](https://www.dropbox.com/s/e2qp8w8j00ejlvh/Results.csv?dl=1) from this repo and importing it as a new table on your Airtable base. This will provide all of the required fields for recharge results.
 
 ![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Screenshots/results_table.gif)
 
-4. Create a new Automation and select the appropriate trigger.
+3. Create a new Automation and select the appropriate trigger.
 ![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Screenshots/triggers.gif)
 
 4. Add *Runs script* as your action. Then copy and paste the code from [incentive.js](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/incentives.js) onto Airtable's script editor.
