@@ -41,7 +41,7 @@ _It is assumed that you're familiar with creating Airtable automations. You can 
 | `phone` | international mobile phone number|
 | `network` | moblie network operator name|
 | `amount` | value of recharge|
-| `isoNmae` | Country ISO name of the receipient|
+| `isoName` | Country ISO name of the receipient|
 | `category` | specify Airtime or Data recharge|
 | `reloadlyId` | reloadly API ID|
 | `reloadlySecret` | Reloadly Secret API Key|
