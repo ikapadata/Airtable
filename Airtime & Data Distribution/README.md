@@ -33,7 +33,7 @@ _It is assumed that you're familiar with creating Airtable automations. You can 
 ![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Screenshots/incentive_code.gif)
 
 
-### Parameters
+### Add Input Variables
 #### Reloadly Recharges
 [Create a Reloadly account](https://www.reloadly.com/registration) and find your `reloadlyId` and `reloadlySecret` at [API settings.](https://www.reloadly.com/developers/api-settings)
 | Parameter key | Parameter value |
@@ -47,11 +47,12 @@ _It is assumed that you're familiar with creating Airtable automations. You can 
 | `reloadlySecret` | Reloadly Secret API Key|
 
 #### Simcontrol Recharges
+Simcontrol API recharges are only used for data bundle recharges in South Africa because they are currently unavailable through the Reloadly API. Once they are available on Reloadly then this will be deprecated.
+
 | Parameter key | Parameter value |
 | --- | --- |
 | `simcontrolKey` | simcontrol API key|
 | `bundleId` | simcontrol data bundle Id|
 | `networkId` | mobile network ID|
+![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Screenshots/simcontrol_parameters.gif)
 
-## Demonstration
-![Screenshot](http://sco-assets.support.airtable.com/automations/change_trigger_type.gif)
