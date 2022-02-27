@@ -54,5 +54,6 @@ Simcontrol API recharges are only used for data bundle recharges in South Africa
 | `simcontrolKey` | simcontrol API key|
 | `bundleId` | simcontrol data bundle Id|
 | `networkId` | mobile network ID|
+
 ![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Screenshots/simcontrol_parameters.gif)
 
