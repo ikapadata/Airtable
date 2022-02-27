@@ -26,6 +26,8 @@ _It is assumed that you're familiar with creating Airtable automations. You can 
 1. Create the **Requests** table by downloading this [sample csv]() from this repo and importing it as a new table on your Airtable base. This will provide all of the required fields for recharge requests.
 2. Create the **Results** table by downloading this [sample csv]() from this repo and importing it as a new table on your Airtable base. This will provide all of the required fields for recharge results.
 3. Create a new Automation and select the appropriate trigger.
+![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Screenshots/triggers.gif)
+
 4. Add Runs script as your action.
 5. Copy and paste the code from [incentive.js](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/incentives.js) onto Airtable's script editor.
 
