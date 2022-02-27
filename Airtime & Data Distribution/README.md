@@ -46,6 +46,8 @@ _It is assumed that you're familiar with creating Airtable automations. You can 
 | `reloadlyId` | reloadly API ID|
 | `reloadlySecret` | Reloadly Secret API Key|
 
+![Screenshot](https://www.dropbox.com/s/erers9copbwen6a/reloadly_parameters.gif?dl=1)
+
 #### Simcontrol Recharges
 Simcontrol API recharges are only used for data bundle recharges in South Africa because they are currently unavailable through the Reloadly API. Once they are available on Reloadly then this will be deprecated.
 
