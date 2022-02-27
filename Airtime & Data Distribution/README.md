@@ -28,8 +28,9 @@ _It is assumed that you're familiar with creating Airtable automations. You can 
 3. Create a new Automation and select the appropriate trigger.
 ![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Screenshots/triggers.gif)
 
-4. Add Runs script as your action.
-5. Copy and paste the code from [incentive.js](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/incentives.js) onto Airtable's script editor.
+4. Add *Runs script* as your action. Then copy and paste the code from [incentive.js](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/incentives.js) onto Airtable's script editor.
+![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Screenshots/paste%20incentive%20code.gif)
+
 
 ### Parameters
 #### Reloadly Recharges
