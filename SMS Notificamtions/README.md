@@ -15,13 +15,12 @@ _It is assumed that you're familiar with creating Airtable automations. You can 
 
 **To use this script as-is**
 
-1. Download the [sample csv](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Airtime%20Results%20Fields.csv) from this repo and import it as a new table on your Airtable base. This will provide all of the required fields for capturing results
-2. Rename the new table to **Results**.
-3. Create a new Automation and select the appropriate trigger.
+1. Download the [SMS.csv](https://www.dropbox.com/s/aze301bdfven2zm/SMS.csv?dl=1) from this repo and import it as a new table on your Airtable base. This will provide all of the required fields for requesting SMS notifications.
+2. Create a new Automation and select the appropriate trigger.
 
-![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Screenshots/triggers.gif)
+![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/SMS%20Notificamtions/Screenshots/script.gif)
 
-4. Add Runs script as your action. Then copy and paste the code from [sms.js](https://github.com/ikapadata/Airtable/blob/new-edits/SMS%20Notificamtions/sms.js) onto Airtable's script editor.
+2. Add Runs script as your action. Then copy and paste the code from [sms.js](https://github.com/ikapadata/Airtable/blob/new-edits/SMS%20Notificamtions/sms.js) onto Airtable's script editor.
 
 ![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/Airtime%20%26%20Data%20Distribution/Screenshots/incentive_code.gif)
 ### Parameters
@@ -33,7 +32,8 @@ _It is assumed that you're familiar with creating Airtable automations. You can 
 | `text` | Text message|
 | `token` | Bulkgate API Token|
 | `appId` | Bulkgate application ID|
+|`rec_id`|Aitable record ID used to update the status|
 
-![Screenshot](http://sco-assets.support.airtable.com/automations/change_trigger_type.gif)
+![Screenshot](https://github.com/ikapadata/Airtable/blob/new-edits/SMS%20Notificamtions/Screenshots/inputs.gif)
 
 
